@@ -54,6 +54,19 @@ public class Ex1_valueType {
 		//int 를 벗어나 long 에 저장하려면 뒤에 l 붙이기 
 		
 		System.out.println(n2);
+		
+		//실수형
+		//소수점을 가진 값들을 저장하기 위한 자료형
+		float f1 = 3.14f;
+		double f2 = 3.14;
+		System.out.println(f1);
+		System.out.println(f2);
+		
+		f1 = 200;
+		f2 = 200;
+		System.out.println(f1
+				);
+		System.out.println(f2);
 	}
 
 }

@@ -1,5 +1,7 @@
 package ex3_work;
 
+import java.util.Arrays;
+
 public class Ex1_work {
 
 	public static void main(String[] args) {
@@ -28,6 +30,18 @@ public class Ex1_work {
 			
 		}
 		System.out.println(res);
+		
+		System.out.println("------------");
+		char[] cArr = {'j', 'a', 'v', 'a'};
+
+		//향상된 포문 foreach
+		//배열에 담긴 모든 내용에 접근하고자 하는 목적으로 만들어진 for문
+		for( char c : cArr) {
+			System.out.print(c);
+		}
+		
+		
+		
 	}
 
 }

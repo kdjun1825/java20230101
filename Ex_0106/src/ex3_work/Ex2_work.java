@@ -13,13 +13,7 @@ public class Ex2_work {
 
 		  */
 		
-		int[] arr = new int[6];
-		arr[0] = 3;   
-		arr[1] = 2;
-		arr[2] = 7;
-		arr[3] = 4;
-		arr[4] = 5;
-		arr[5] = 6;    
+		int[] arr = {3, 2, 7, 4, 5, 6};
 		int i = 0;
 		int n1;
 		for(i = 0; i < arr.length - 1; i++) {
@@ -34,6 +28,22 @@ public class Ex2_work {
 			
 		}
 		System.out.println(arr[0]);
+		
+		
+		//arr이 가진 값을 오름차순으로 정렬
+		for( i = 0; i < arr.length; i++) {
+			
+			for(int j = i; j < arr.length; j++) {
+				
+				if(arr[j] < arr[i]) {
+					int tmp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = tmp;
+					System.out.println(Arrays.toString(arr));
+				}
+			}
+		}
+		System.out.println(Arrays.toString(arr));
 	}
 
 }

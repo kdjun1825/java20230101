@@ -45,7 +45,22 @@ public class Ex3_work {
 		
 			
 		}
+		System.out.println("정수값을 입력하시오.");
+		int n2 = sc.nextInt();
+		int i = 0;
+		for(i = 2; i <= n2; i++) {
+			
+			if(n2 % i == 0) {
+				break;
+			}
+			
+		}
 		
+		if( i == n2 ) {
+			System.out.println("소수입니다");
+		}else {
+			System.out.println("소수가 아닙니다");
+		}
 
 		
 		

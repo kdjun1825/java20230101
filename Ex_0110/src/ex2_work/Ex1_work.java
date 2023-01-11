@@ -35,8 +35,18 @@ public class Ex1_work {
 				back =  num;
 			}
 				
-
-				
+// front = 1
+// back = 0
+// num = l;
+			//  0  ~ length
+			//front = back;
+			//back = num;
+			//num = front + back'
+			//print(back)
+			//i = 0  0,1,1  1
+			//    1  1,1,2  1
+			//    2  1,2,3  2
+			
 			
 		}
 		

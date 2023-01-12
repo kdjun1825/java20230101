@@ -58,7 +58,7 @@ public class Ex2_method {
 		String[] id2 = id.split(" ");
 		System.out.println( id2[0] + " / " + id2[1] );
 		
-		String sss = "abcabcabcabc";
+		String sss = "a bc a bc a bc a bc";
 		String[] sss2 = sss.split("a");
 		System.out.println(Arrays.toString(sss2));
 		

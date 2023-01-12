@@ -15,14 +15,15 @@ public class Ex3_work {
 		
 		Scanner sc = new Scanner(System.in);
 		String sys = sc.next();
-		int i = sys.length() / 2;
+		int i = 0;
+		int half = sys.length() / 2;
 		//ex 가나다나가
 		//0 4
 		//1 3
 		//i < 2
 		
 		System.out.println(sys.length());
-		for(i = 0; i < sys.length() / 2; ) {
+		for(i = 0; i < half; ) {
 			System.out.println(i);
 			char c = sys.charAt(i);
 			//i = 0 : 가
@@ -35,7 +36,7 @@ public class Ex3_work {
 			
 		}
 		
-		if(i == sys.length() / 2) {
+		if(i == half) {
 			System.out.println("회문수입니다.");
 		}else {
 			System.out.println("회문수아닙니다.");

@@ -3,7 +3,7 @@ package ex6_work;
 public class DrinkInfo {
 	
 	
-	
+	//private으로바꿔보기
 	public VendingMethod[] info() {
 			
 			VendingMethod[]  dInfo = new VendingMethod[5];
@@ -37,6 +37,7 @@ public class DrinkInfo {
 				if(uCoin >= dInfo[i].getPrice()) {
 					
 					System.out.println(dInfo[i].getName() + "\t |" + dInfo[i].getPrice() + "원");
+					System.out.println("--------------------");
 					
 				}
 

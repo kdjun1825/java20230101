@@ -2,7 +2,6 @@ package ex6_work;
 
 import java.util.Scanner;
 
-import ex2_class_array.Person;
 
 public class VendingMain {
 
@@ -24,12 +23,11 @@ public class VendingMain {
 		DrinkInfo di = new DrinkInfo();
 		
 		//기본 음료수 정보 출력 ( 메서드 안에 출력문 있으면 변수 선언시에도 해당 메서드가 실행되서 출력도 같이 나옴
-		VendingMethod[] vd = di.info();
 		
 		//사용자 금액 입력
 		System.out.println("넣을 금액: ");
 		int uCoin = sc.nextInt();
-		di.coinInfo(uCoin, vd);
+		di.coinInfo(uCoin);
 		
 		//금액에 맞는 음료 출력
 		
@@ -39,7 +37,7 @@ public class VendingMain {
 		//구매할 음료 이름 입력
 		System.out.println("구매할 음료 이름: ");
 		String uName = sc.next();
-		di.selectDrink(uName, vd, uCoin);
+		di.selectDrink(uName, uCoin);
 		
 		//xx를 구매했습니다!
 		//거스름돈 반환

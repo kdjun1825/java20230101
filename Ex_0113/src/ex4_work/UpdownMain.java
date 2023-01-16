@@ -25,6 +25,7 @@ public class UpdownMain {
 		
 		//필요한 객체 생성
 		Random rd = new Random();
+		//int rd = new Random().nextInt() + 1;
 		Scanner sc = new Scanner(System.in);
 		UpdownMethod udm = new UpdownMethod();
 		

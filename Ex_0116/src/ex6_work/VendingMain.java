@@ -21,8 +21,8 @@ public class VendingMain {
 		Scanner sc = new Scanner(System.in);
 		//정보가 있는 객체
 		DrinkInfo di = new DrinkInfo();
-		
 		//기본 음료수 정보 출력 ( 메서드 안에 출력문 있으면 변수 선언시에도 해당 메서드가 실행되서 출력도 같이 나옴
+		di.dInfo();
 		
 		//사용자 금액 입력
 		System.out.println("넣을 금액: ");

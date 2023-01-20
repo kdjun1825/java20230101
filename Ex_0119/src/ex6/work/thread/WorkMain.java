@@ -57,11 +57,11 @@ public class WorkMain {
 				//정답 시 카운트 
 				count++;
 				
-				//5개 맞히면 false 후 스레드의 while 도 false
-				if(count == 5) {
-					b = false;
-					tw.setB(b);
-				}
+			}
+			//5개 맞히면 false 후 스레드의 while 도 false
+			if(count == 5) {
+				b = false;
+				tw.setB(b);
 			}
 			
 			

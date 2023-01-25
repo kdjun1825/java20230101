@@ -39,7 +39,7 @@ public class MapWork {
 		
 		if(map.containsKey(id)) {
 			//아이디 존재 시 
-			if(map.containsValue(pw)) {
+			if(map.get(id) == pw) {
 				System.out.println("로그인 성공");
 				break;
 			}else {

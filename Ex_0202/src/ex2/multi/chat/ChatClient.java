@@ -73,9 +73,9 @@ public class ChatClient extends JFrame implements Runnable{
 
 			public void windowClosing(WindowEvent e) {
 				//x버튼을 눌러서 종료하기 전에 서버와의 접속을 해제
-				out.println(pw);
+				out.println("asdfsadfasdf2jr289gh");
 
-			};
+			}
 		});
 		
 		
@@ -95,7 +95,7 @@ public class ChatClient extends JFrame implements Runnable{
 			in = new BufferedReader(new InputStreamReader(s.getInputStream()));
 			
 			//문자열을 서버로 전송하기 위한 스트림
-			PrintWriter out = null;
+//			PrintWriter out = null;
 			out = new PrintWriter(s.getOutputStream(), true); //true 로 flush까지 하기 
 			
 			
@@ -122,22 +122,23 @@ public class ChatClient extends JFrame implements Runnable{
 	public void run() {
 		
 		//서버로부터 전달되는 메시지를 기다린다
-		while(true) {
 			
 			try {
-				
-				String msg = in.readLine();
-				
-				if(msg.equals(pw)) {
+				while(true) {
 					
-					break;
+					String msg = in.readLine();
 					
-				}
-				
-				
-				if(msg != null) {
-					area.append(msg + "\n");
-				}
+					if(msg.equals("asdfsadfasdf2jr289gh")) {
+						
+						break;
+						
+					}
+					
+					
+					if(msg != null) {
+						area.append(msg + "\n");
+					}
+				}	
 				
 			} catch (Exception e) {
 				// TODO: handle exception
@@ -151,7 +152,6 @@ public class ChatClient extends JFrame implements Runnable{
 					// TODO: handle exception
 				}
 			}
-		}
 		
 	}
 

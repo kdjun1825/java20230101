@@ -1,24 +1,26 @@
-package ex1.button;
-
 import java.awt.Button;
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 
+import javax.swing.JFrame;
+
 import com.sun.glass.events.WindowEvent;
 
-public class Ex1_Button {
+
+public class pointFrame2 {
 
 	public static void main(String[] args) {
-
+//----------------------
 		Frame f = new Frame("ButtonTest");
-		f.setBounds(0, 0, 1920, 1080);
+		f.setSize(1920, 1089);
 		//x,  y,   w,   h
 		f.setVisible(true);
+		f.setExtendedState(JFrame.MAXIMIZED_BOTH);
+		f.setUndecorated(true);
 		
 		//Frame클래스는 추가된 컴포넌트(자식)을 화면에 가득 채우려고 하는 속성을 가지고있
-		f.setLayout(null);//자동배치를 끈다
 		
 		//버튼 생성
 		//자동배치가 꺼져있는 Frame에 들어가게 될 자식 컴포넌트들은 
@@ -57,7 +59,6 @@ public class Ex1_Button {
 				
 			};
 		});
-		
 		
 	}
 
